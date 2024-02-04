@@ -1,0 +1,188 @@
+.carousel-image {
+    width: 100%;
+    height: 90vh;
+    /* Adjust the height according to your preference */
+    object-fit: cover;
+}
+
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.whats {
+    position: fixed;
+    right: 10px;
+    z-index: 3;
+    bottom: 100px;
+}
+
+.you {
+    position: fixed;
+    left: 10px;
+    z-index: 3;
+    bottom: 100px;
+}
+
+.forms {
+    background-image: url(./images/modern-space-with-charcoal-accent-wall-sleek-lighting-wooden-ceiling.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.card {
+    position: relative;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    z-index: 3;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    background-color: aqua;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    opacity: 0.5;
+}
+
+
+.card::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    background-color: black;
+    bottom: 0;
+    right: 0;
+    transition: 1s;
+    opacity: 0.4;
+}
+
+.card:hover::after, .card:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+.sec {
+    background-image: url(./images/chic-modern-luxury-aesthetics-style-living-room-gray-tone.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.card1 {
+    position: relative;
+    background-image: url(./images/images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    transition: 1s;
+}
+
+.card1 img {
+    width: 100px;
+    height: 100px;
+}
+
+.card1:hover {
+    transform: scale(1.1);
+}
+
+.card2 {
+    position: relative;
+    background-image: url(./images/girl.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    transition: 1s;
+
+}
+
+.card2 img {
+    width: 100px;
+    height: 100px;
+}
+
+.card2:hover {
+    transform: scale(1.1);
+}
+
+.card3 {
+    position: relative;
+    background-image: url(./images/xZ4wg2Xj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    transition: 1s;
+
+}
+
+.card3 img {
+    width: 100px;
+    height: 100px;
+}
+
+.card3:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 80%);
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.newsimg {
+    height: 320px;
+    object-fit: cover;
+
+}
+
+.line {
+    position: relative;
+}
+
+.line::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: black;
+    bottom: -10px;
+    left: 0;
+}
+
+.logoImg {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li i {
+    margin-right: 10px;
+}

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture shop</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./all.min.css" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="bg-light">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="./images/logo_pruebla7789.jpg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top m-3">
+                <a class="navbar-brand" href="#">Furniture</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Delivery</a></li>
+                                <li><a class="dropdown-item" href="#">Decor</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Discounts </a></li>
+                                <li><a class="dropdown-item" href="#">Projects</a></li>
+                                <li><a class="dropdown-item" href="#">Discounts </a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-disabled="false">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info" type="submit">Search</button>
+                    </form>
+                    <button class="btn btn-outline-info m-2" type="" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Login</button>
+                </div>
+            </div>
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-info-subtle">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="d-flex flex-row p-2 align-items-center">
+                                <label for="email" class="w-25">Email</label>
+                                <input type="email" id="email"
+                                    class="w-100 m-3 border rounded border-opacity-25 border-dark-subtle" />
+                            </div>
+                            <div class="d-flex flex-row p-2 align-items-center">
+                                <label for="password" class="w-25">password</label>
+                                <input type="password" id="password"
+                                    class="w-100 m-3 border rounded border-opacity-25 border-dark-subtle" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn bg-info-subtle">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleDark" class="carousel carousel-light slide">
+            <div class="btn btn-success p-3 rounded-pill whats">
+                <i class="fa-brands fa-whatsapp" style="font-size:20px"></i>
+                Contact Us
+            </div>
+            <div class="btn btn-danger p-3 rounded-pill you">
+                <i class="fa-brands fa-youtube" style="font-size:20px"></i>
+                How to buy
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner w-100">
+                <div class="carousel-item active w-100" data-bs-interval="10000">
+                    <img src="./images/armchair-living-room-with-copy-space.jpg" class="d-block carousel-image"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-flex bg-secondary-subtle bg-opacity-50 text-dark ">
+                        <h5>Classic</h5>
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                            <p>At Mobel valancia spain, we bring you a curated selection of timeless pieces,</p>
+                            <button type="button" class="btn bg-info text-light ml-2 w-25">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./images/blue-armchair-against-blue-wall-living-room-interior-elegant-interior-design-with-copy-space-ai-generative.jpg"
+                        class="d-block carousel-image" alt="...">
+                    <div class="carousel-caption d-none d-md-flex bg-secondary-subtle bg-opacity-50 text-dark ">
+                        <h5>Modern</h5>
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                            <p>Discover craftsmanship that speaks to your taste and design a home that reflects your
+                                unique personality</p>
+                            <button type="button" class="btn bg-info text-light ml-2 w-25">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item w-100">
+                    <img src="./images/mid-century-modern-living-room-interior-design-with-monstera-tree.jpg"
+                        class="d-block carousel-image w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-flex bg-secondary-subtle bg-opacity-50 text-dark ">
+                        <h5>Save up to 50%</h5>
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100">
+                            <p>transform your living space into a haven of style and comfort with our exquisite
+                                furniture
+                                collection.</p>
+                            <button type="button" class="btn bg-info text-light ml-2 w-25">Learn More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        <div class="welcome d-flex flex-column justify-content-center align-items-center p-5  mt-5
+w-100 text-center">
+
+            <h2>Welcome Again</h2>
+            <p>here every chair, sofa, and table tells a story of elegance and sophistication</p>
+            <button type="button" class="btn btn-dark p-2 text-light">Register</button>
+        </div>
+        <div class="accordion mt-5 mb-5 container" id="accordionExample">
+            <div class="accordion-item ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button  bg-info text-light fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Our Story
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show " data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Learn about the journey of [Mobel valancia spain], from its humble beginnings to becoming a
+                        trusted name in the
+                        world of furniture. Discover our commitment to quality craftsmanship and customer satisfaction.
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mt-3 mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-info text-light fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        Our Collections
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Explore our diverse range of furniture collections designed to suit various styles and
+                        preferences. From modern and
+                        minimalist to classic and timeless, find the perfect pieces to enhance your living spaces.
+                        .
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-info text-light fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        Expert Tips
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Delve into our expert tips on interior design and furniture arrangement. Discover how to
+                        optimize your space, choose the
+                        right furniture pieces for your home, and stay updated on the latest trends in the world of home
+                        decor.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forms p-2">
+            <form class="container shadow-sm rounded-bill mt-5 mb-5 p-5 bg-light">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="button" class="btn btn-info" id="liveToastBtn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">Submit</button>
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Success</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                you have been Registered
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-info">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+            <form class="container shadow-sm rounded-bill mt-5  mb-5 p-5 bg-light">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-info" id="liveToastBtn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal3">Submit</button>
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Success</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                you message have been sent
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center p-5 mt-5 text-center">
+            <h3 class="fw-bold text-uppercase">Our Products</h3>
+            <p>Bedrooms, Dining rooms, Living rooms, Bathroom furniture, Kitchens, Offices, Furniture for Kids,
+                Auxiliary and Outdoor
+                furniture for any budget.
+            </p>
+        </div>
+        <div class="card-group container mt-5 mb-5  ">
+            <div class="row justify-content-around">
+                <div
+                    class="card col-11 col-md-3 d-flex flex-column align-items-center text-center  mb-3 mb-md-0 p-2 justify-content-between">
+                    <img src="./images/3957.jpg" class="card-img-top w-[200px]" alt="...">
+                    <div class="card-body z-3">
+                        <h5 class="card-title">yellow sofa</h5>
+                        <p class="card-text">Your dream home begins with the perfect furnishings</p>
+                        <button class="btn btn-info text-light">Buy Now</button>
+                    </div>
+                </div>
+                <div
+                    class="card  col-11 col-md-3 d-flex flex-column align-items-center text-center mb-3 mb-md-0 p-2 justify-content-between">
+                    <img src="./images/picture-frame-by-velvet-armchair.jpg" class="card-img-top " alt="...">
+                    <div class="card-body z-3">
+                        <h5 class="card-title">yellow velvet armchair</h5>
+                        <p class="card-text">Your dream home begins with the perfect furnishings
+                        </p>
+                        <button class="btn btn-info text-light ">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card  col-11 col-md-3 d-flex flex-column align-items-center text-center mb-3 mb-md-0 p-2">
+                    <img src="./images/picture-frame-with-abstract-art-by-pink-velvet-armchair.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body z-3">
+                        <h5 class="card-title">pink velvet armchair</h5>
+                        <p class="card-text">Your dream home begins with the perfect furnishings
+                        </p>
+                        <button class="btn btn-info text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around mt-md-5">
+                <div class="card col-11 col-md-3 d-flex flex-column align-items-center text-center  p-2 mb-3 mb-md-0">
+                    <img src="./images/gray-sofa-white-living-room-with-copy-space.jpg" class="card-img-top w-[200px]"
+                        alt="...">
+                    <div class="card-body z-3">
+                        <h5 class="card-title">gray sofa</h5>
+                        <p class="card-text">Your dream home begins with the perfect furnishings
+                        </p>
+                        <button class="btn btn-info text-light">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card  col-11 col-md-3 d-flex flex-column align-items-center text-center p-2 mb-3 mb-md-0">
+                    <img src="./images/interior-design-house-modern-wooden-table-chair.jpg" class="card-img-top "
+                        alt="...">
+                    <div class="card-body z-3">
+                        <h5 class="card-title">wooden table with chairs</h5>
+                        <p class="card-text">Your dream home begins with the perfect furnishings
+                        </p>
+                        <button class="btn btn-info text-light">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card  col-11 col-md-3 d-flex flex-column align-items-center text-center  p-2 mb-3 mb-md-0">
+                    <img src="./images/chic-modern-luxury-aesthetics-style-living-room-gray-tone.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body z-3">
+                        <h5 class="card-title">room gray tone</h5>
+                        <p class="card-text">Your dream home begins with the perfect furnishings
+                        </p>
+                        <button class="btn btn-info text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec mb-5"></div>
+        <div class=" d-flex flex-column justify-content-center align-items-center p-5  mt-5
+        w-100 text-center">
+            <h2>Our Customers Say</h2>
+        </div>
+        <div class="card-group container mt-5 mb-5 d-block mx-auto">
+            <div class="row justify-content-around">
+                <div
+                    class="col-11 col-md-3 d-flex flex-row align-items-end justify-content-center  text-center card1 mb-3 mb-md-0 p-2 rounded shadow-lg">
+                    <div class="overlay"></div>
+
+                    <div class="card-body z-3 text-light  mb-3 order-2">
+                        <h5 class="card-title">Outstanding Quality!</h5>
+                        <div class="text-warning mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <img src="./images/images.jpg" class="card-img-top rounded-pill z-3" alt="...">
+                </div>
+                <div
+                    class="col-11 col-md-3 d-flex flex-row align-items-end justify-content-center text-center card2 mb-3 mb-md-0 p-2  rounded shadow-lg">
+                    <div class="overlay"></div>
+                    <div class="card-body z-3 text-light mb-3 order-2">
+                        <h5 class="card-title">Impressive Design!</h5>
+                        <div class="text-warning mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <img src="./images/girl.jpg" class="card-img-top rounded-pill z-3" alt="...">
+                </div>
+                <div
+                    class="col-11 col-md-3 d-flex flex-row align-items-end justify-content-center text-center card3 mb-3 mb-md-0 p-2 rounded shadow-lg">
+                    <div class="overlay"></div>
+                    <div class="card-body z-3 text-light order-2 mb-3">
+                        <h5 class="card-title">Fantastic Furniture!</h5>
+                        <div class="text-warning mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <img src="./images/xZ4wg2Xj.jpg" class="card-img-top rounded-pill z-3" alt="...">
+
+                </div>
+            </div>
+        </div>
+        <div class="news mt-10 mb-5">
+            <div class="container mt-5 p-5">
+                <h2 class="mb-5 mt-5">Latest Furniture News</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between shadow-lg mb-5">
+                    <img src="./images/blue-armchair-against-blue-wall-living-room-interior-elegant-interior-design-with-copy-space-ai-generative.jpg"
+                        class="newsimg w-100  w-md-50" alt="News Image">
+                    <div class="card-body p-5">
+                        <h3 class=" mb-2">Exciting News Title</h3>
+                        <div class="text-body-secondary line">
+                            <i class="fas fa-calendar-alt me-1"></i>
+                            2022-02-10 <!-- Replace with the actual date -->
+                        </div>
+                        <p class="card-text mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            tempus eleifend
+                            magna, vel lacinia orci fringilla nec.</p>
+                        <a href="#" class="btn btn-info text-light">Read More</a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between shadow-lg mb-5">
+                    <img src="./images/mid-century-modern-living-room-interior-design-with-monstera-tree.jpg"
+                        class="newsimg order-md-2 w-100  w-md-50" alt="News Image">
+                    <div class="card-body p-5">
+                        <h3 class=" mb-2">Exciting News Title</h3>
+                        <div class="text-body-secondary line">
+                            <i class="fas fa-calendar-alt me-1"></i>
+                            2022-02-10 <!-- Replace with the actual date -->
+                        </div>
+                        <p class="card-text mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            tempus eleifend
+                            magna, vel lacinia orci fringilla nec.</p>
+                        <a href="#" class="btn btn-info text-light">Read More</a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between shadow-lg mb-5">
+                    <img src="./images/chic-modern-luxury-aesthetics-style-living-room-gray-tone.jpg"
+                        class="newsimg w-100  w-md-50" alt="News Image">
+                    <div class="card-body p-5">
+                        <h3 class=" mb-2">Exciting News Title</h3>
+                        <div class="text-body-secondary line">
+                            <i class="fas fa-calendar-alt me-1"></i>
+                            2022-02-10 <!-- Replace with the actual date -->
+                        </div>
+                        <p class="card-text mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            tempus eleifend
+                            magna, vel lacinia orci fringilla nec.</p>
+                        <a href="#" class="btn btn-info text-light">Read More</a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between shadow-lg mb-5">
+                    <img src="./images/modern-space-with-charcoal-accent-wall-sleek-lighting-wooden-ceiling.jpg"
+                        class="newsimg order-md-2 w-100  w-md-50" alt="News Image">
+                    <div class="card-body p-5">
+                        <h3 class=" mb-2">Exciting News Title</h3>
+                        <div class="text-body-secondary line">
+                            <i class="fas fa-calendar-alt me-1"></i>
+                            2022-02-10 <!-- Replace with the actual date -->
+                        </div>
+                        <p class="card-text mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            tempus eleifend
+                            magna, vel lacinia orci fringilla nec.</p>
+                        <a href="#" class="btn btn-info text-light">Read More</a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between shadow-lg mb-5">
+                    <img src="./images/armchair-living-room-with-copy-space.jpg" class="newsimg w-100  w-md-50"
+                        alt="News Image">
+                    <div class="card-body p-5">
+                        <h3 class=" mb-2">Exciting News Title</h3>
+                        <div class="text-body-secondary line">
+                            <i class="fas fa-calendar-alt me-1"></i>
+                            2022-02-10 <!-- Replace with the actual date -->
+                        </div>
+                        <p class="card-text mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            tempus eleifend
+                            magna, vel lacinia orci fringilla nec.</p>
+                        <a href="#" class="btn btn-info text-light">Read More</a>
+                    </div>
+                </div>
+                <!-- Add more news cards as needed -->
+            </div>
+        </div>
+        <footer class="bg-info p-5">
+            <div
+                class=" d-flex flex-column flex-md-row container align-items-center justify-content-around text-center">
+                <div class=" text-white  d-flex flex-column  align-items-center ">
+                    <img src="./images/logo_pruebla7789.jpg" class="logoImg" />
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i>Elías Tormo, 68 - Valencia Spain</li>
+                        <li><i class="fa-solid fa-phone"></i>Office +34963470406
+                        </li>
+                        <li><i class="fa-solid fa-phone"></i>Mobile +34665904143
+                        </li>
+                        <li><i class="fa-solid fa-envelope"></i>www.mebelvalencia.com
+                        </li>
+                        <li><i class="fa-solid fa-envelope"></i>www.buyfurnitureinspain.com
+                        </li>
+                    </ul>
+                </div>
+                <div class=" d-flex flex-column  align-items-center text-white">
+                    <ul>
+                        <li>Classic Furniture</li>
+                        <li>Modern Furniture
+                        </li>
+                        <li>Classic Lighting
+                        </li>
+                        <li>Modern Lighting
+                        </li>
+                        <li>Accessories
+                        </li>
+                        <li>Projects
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column  align-items-center text-white">
+                    <ul>
+                        <li>About Us</li>
+                        <li>Catalogues
+                        </li>
+                        <li>Terms of Service
+
+                        </li>
+                        <li>Legal Notice
+
+                        </li>
+                        <li>Cookies
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column  align-items-center text-white">
+                    <h4>Contact Us on Social Media</h4>
+                    <p>Follow us on our social media channels for the latest updates and news.</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <!-- Add more social media icons as needed -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
